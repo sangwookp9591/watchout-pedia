@@ -29,7 +29,7 @@ const Summary = styled.span`
   text-align: center;
 `;
 
-const Exphasis = styled.em`
+const Emphasis = styled.em`
   color: #ff0558;
   font-size: 19px;
   font-weight: 500;
@@ -45,17 +45,14 @@ const ContentWrapper = styled.div`
   display: flex;
   margin: 0 60px;
 `;
+
 const Left = styled.div``;
 
 const Right = styled.div``;
 
-const TermAndPolicy = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-`;
+const TermsAndPolicy = styled.ul``;
 
-const TermAndPolicyItem = styled.li`
+const TermsAndPolicyItem = styled.li`
   display: inline-block;
   color: #a5a5a7;
   font-size: 13px;
@@ -66,11 +63,11 @@ const TermAndPolicyItem = styled.li`
   &:not(:last-of-type) {
     &:after {
       content: '';
-      dislay: lnline-block;
+      display: inline-block;
       background: #848485;
       vertical-align: top;
       width: 1px;
-      heigth: 12px;
+      height: 12px;
       margin: 5px 8px 0;
     }
   }
@@ -83,18 +80,18 @@ const Footer: React.FC = () => {
         <Statistics>
           <Summary>
             지금까지&nbsp;
-            <Exphasis>* 644, 934, 343 개의 평가가</Exphasis>
+            <Emphasis>* 644, 934, 343 개의 평가가</Emphasis>
             &nbsp;쌓였엉,
           </Summary>
         </Statistics>
         <Container>
           <ContentWrapper>
             <Left>
-              <TermAndPolicy>
-                <TermAndPolicyItem>서비스 이용약관</TermAndPolicyItem>
-                <TermAndPolicyItem>개인정보 처리방침</TermAndPolicyItem>
-                <TermAndPolicyItem>회사정보</TermAndPolicyItem>
-              </TermAndPolicy>
+              <TermsAndPolicy>
+                <TermsAndPolicyItem>서비스 이용약관</TermsAndPolicyItem>
+                <TermsAndPolicyItem>개인정보 처리방침</TermsAndPolicyItem>
+                <TermsAndPolicyItem>회사정보</TermsAndPolicyItem>
+              </TermsAndPolicy>
             </Left>
             <Right />
           </ContentWrapper>
